@@ -1,0 +1,56 @@
+<div class="" id="accueil">
+  <div class="col-md-12 header">
+    <app-nav-bar></app-nav-bar>
+  </div>
+
+  <div class="col-md-12 corps">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="col-md-12 container div-droite">
+            <div class="col-md-12 div-search mb-3 row">
+              <div class="input-group input-group-lg">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  ><button><i class="fa-solid fa-magnifying-glass"></i></button
+                ></span>
+              </div>
+              <p class="mt-2">
+                Suggestions : <span><a href=""> Cloud Computing ,</a></span>
+                <span><a href="">Devops , </a></span>
+                <span><a href=""> Front End Development</a></span>
+              </p>
+            </div>
+
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+              <mat-tab label=" APPEL D'OFRRE">
+                <div class="mt-2">
+                  <app-tender-accueil></app-tender-accueil>
+                </div>
+              </mat-tab>
+              <mat-tab label="MES CANDIDATURES">
+                <app-liste-candidature-acceuil></app-liste-candidature-acceuil>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+        <div class="col-lg-4 second .d-none .d-lg-block">
+          <div class="col-md-12 div-gauche">
+            <app-profil-esn></app-profil-esn>
+            <!-- profil consultant  -->
+            <!--  <app-profil-consultant></app-profil-consultant> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <footer></footer>
+    </div>
+  </div>
+</div>

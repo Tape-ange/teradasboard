@@ -1,0 +1,30 @@
+<div class="wrap-stepper" >
+    <header>
+        <div class="Parag py-1">
+            <p>Etape {{selectedIndex + 1}}/{{steps.length}} : {{steps.get(selectedIndex)?.label}}</p>
+           
+        </div>
+        <div class="StepBar d-flex py-3">
+            <ng-container *ngFor="let t of steps; index as i" []>
+                <stepper-item [currentIndex]="selectedIndex" [stepNumber]="i" class=""></stepper-item>
+            </ng-container>
+            
+        </div>
+    </header>
+    <div class="stepper-body-container">
+        <div [style.display]="selected ? 'block' : 'none'">
+            <ng-container [ngTemplateOutlet]="selected!.content"></ng-container>
+        </div>
+    </div>
+    <footer *ngIf="selectedIndex != 0" class="mt-3 d-flex align-content-end ">
+        <div class="d-inline ml-auto">
+            <a  class="t-btn t-btn-secondary" (click)="previous()">
+                Précédent
+            </a>
+            <a class="t-btn t-btn-primary"  (click)="next()">
+                Suivant
+            </a>
+        </div>
+       
+    </footer>
+</div>

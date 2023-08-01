@@ -1,0 +1,38 @@
+<div class="t-cards p-3">
+  <div class="t-cards-elmnts">
+    <div class="t-client-info p-2 justify-between">
+      <div class="t-img-client">
+        <img src="{{ data.imgClient }}" alt="erreur!" />
+      </div>
+      <div class="t-cards-type-func">
+        <p class="text-[#DC2626] bg-[#FEF2F2] rounded-full p-2 text-xs">
+          {{ data.func }}
+        </p>
+      </div>
+    </div>
+    <div class="t-cards-func py-2">
+      <h2 class="t-color-secondary t-title-2">
+        <b>{{ data.title }}</b>
+      </h2>
+    </div>
+    <div>
+      <p class="text-[#A1A1A1] !text-base">
+        {{ data.info }}
+      </p>
+    </div>
+    <div class="t-salary py-2">
+      <p class="t-color-secondary">{{ data.salary }}</p>
+    </div>
+    <div class="t-language gap-2">
+      <div class="bg-[#F5FAFF] rounded-full p-2">
+        <span>{{ data.FirstTool }}</span>
+      </div>
+      <div class="bg-[#F5FAFF] rounded-full p-2">
+        <span>{{ data.SndTool }}</span>
+      </div>
+      <div class="bg-[#F5FAFF] rounded-full p-2">
+        <span>{{ data.ThirdTool }}</span>
+      </div>
+    </div>
+  </div>
+</div>

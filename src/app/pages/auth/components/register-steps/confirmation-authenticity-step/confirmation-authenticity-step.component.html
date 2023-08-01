@@ -1,0 +1,37 @@
+<div class="Info py-3">
+  <h2 class="text-[#D53669] t-title-1 t-color-primary">Confirmons l’authenticité de votre entreprise </h2>
+</div>
+<div class="t-parag py-3">
+  <p>
+    Lorem ipsum dolor sit amet consectetur. Consectetur morbi elementum cras
+    risus. Suscipit cras vulputate eros feugiat. Ut nulla mauris amet commodo.
+  </p>
+</div>
+<form method="post" [formGroup]="form" >
+<div class="flex flex-col">
+  <div class="py-2 ">
+    <div class="mb-2 fw-bolder"><label for="">Numéro siret</label></div>
+    <div class="w-[100]">
+      <input
+      formControlName='numSiret'
+        type="text"
+        class="t-input rounded-lg w-full p-4"
+        placeholder="Entrer le numéro siret de votre entreprise"
+      />
+    </div>
+  </div>
+  <div class="py-2">
+    <div class="mb-2 fw-bolder">
+      <label for="">Nom de l'entreprise</label>
+    </div>
+    <div class="w-[100]">
+      <input
+        type="text"
+        class="t-input rounded-lg w-full p-4"
+        placeholder="Entrer le n de votre entreprise"
+      />
+    </div>
+  </div>
+</div>
+</form>
+

@@ -1,0 +1,31 @@
+<div class="container-fluid h-screen">
+  <div class="row flex-nowrap h-screen">
+    <div class="t-actor col-auto col-md-4 col-xl-3  col-34 bg-[#E5EDFE] relative items-center ">
+    <img
+      class="absolute bottom-0"
+      src="/assets/image/wepik-export-20230504135758PQLt 1.svg"
+      alt="Une Erreur s'est produite"
+    />
+  </div>
+  <div class="PresentActors col flex-fill">
+    <div class="teraImg p-2 mb-5">
+      <img src="/assets/image/logo 1.svg" alt="Une erreur s'est produite" />
+    </div>
+    <register-stepper >
+      <cdk-step [label]="'Type de compte '">
+        <app-choose-account-type-step></app-choose-account-type-step>
+      </cdk-step>
+      <cdk-step [label]="'Confirmez l\'authenticité'" >
+        <app-confirmation-authenticity-step ></app-confirmation-authenticity-step>
+      </cdk-step>
+      <cdk-step [label]="'Informations générales'" >
+        <app-general-information-step></app-general-information-step>
+      </cdk-step>
+      <cdk-step [label]="'Fin d\'inscription'" >
+        <app-end-of-registration-step></app-end-of-registration-step>
+      </cdk-step>
+    </register-stepper>
+  </div>
+  </div>
+
+</div>

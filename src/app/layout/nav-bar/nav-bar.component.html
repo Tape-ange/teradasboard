@@ -1,0 +1,159 @@
+<!-- header avec logo, notif ect  commence ici -->
+<nav class="navbar">
+  <div class="container-fluid d-none d-lg-block">
+    <div class="container">
+      <div class="row div1 m-auto justify-content-between">
+        <div class="col-md-3">
+          <a class=""><img src="../../../assets/image/logo 1.svg" alt="" /></a>
+        </div>
+        <div class="col-md-4 text-right row divRight">
+          <div class="col-md-4 border-start m-auto row divIcon">
+            <span class="col-md-6 m-auto">
+              <i class="fa-regular fa-bell fa-xl"></i>
+            </span>
+
+            <span class="col-md-6 m-auto">
+              <i class="fa-regular fa-comment-dots fa-xl"></i
+            ></span>
+          </div>
+
+          <div class="col-md-8 div-photo">
+            <button class="rounded-circle">
+              <img
+                src="../../../assets/image/login/login_illustration1.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- menu navbar commence ici -->
+
+      <!-- <div class="row div2 justify-content-between">
+        <div class="col-md-8 row">
+          <div class="dropdown col-md-2 text-left">Accueil</div>
+          <div class="dropdown col-md-2 text-left" id="navbarNavDarkDropdown">
+            <p>Appel d’offre</p>
+          </div>
+          <div class="dropdown col-md-2 text-left">
+            <p>Documents</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="navbar">
+        <a href="#" class="navlink hover:text-[#D53669]">Accueil</a>
+        <div class="dropdown1 p-1">
+          <button class="dropbtn">
+            Appels d'offre
+            <i class="fa-solid fa-angle-down i-down"></i>
+            <i class="fa-solid fa-angle-up i-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 1</a
+            >
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 2</a
+            >
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 3</a
+            >
+          </div>
+        </div>
+        <div class="dropdown2 p-1">
+          <button class="dropbtn">
+            Documents
+            <i class="fa-solid fa-angle-down i-down"></i>
+            <i class="fa-solid fa-angle-up i-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 1</a
+            >
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 2</a
+            >
+            <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+              >Link 3</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-2 d-lg-none d-sm-block">
+    <div class="row div1 m-auto justify-content-between">
+      <div class="col-3 divLogo">
+        <div class="m-auto">
+          <a class=""><img src="../../../assets/image/logo 1.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="col-4 text-right row divRight">
+        <div class="m-auto text-right">
+          <button mat-button [matMenuTriggerFor]="menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <div class="row text-end">
+                <div class="col-6 m-auto">
+                  <span> Mon profil</span>
+                </div>
+                <div class="col-6 rounded-circle">
+                  <span
+                    ><img
+                      src="../../../assets/image/login/login_illustration1.svg"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </button>
+            <div class="navbar row">
+              <div class="col-xs-12">
+                <a href="#" class="navlink hover:text-[#D53669]">Accueil</a>
+              </div>
+
+              <div class="col-xs-12 dropdown1 p-1">
+                <button class="dropbtn">
+                  Appels d'offre
+                  <i class="fa-solid fa-angle-down i-down"></i>
+                  <i class="fa-solid fa-angle-up i-up"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 1</a
+                  >
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 2</a
+                  >
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 3</a
+                  >
+                </div>
+              </div>
+              <div class="col-xs-12 dropdown2 p-1">
+                <button class="dropbtn">
+                  Documents
+                  <i class="fa-solid fa-angle-down i-down"></i>
+                  <i class="fa-solid fa-angle-up i-up"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 1</a
+                  >
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 2</a
+                  >
+                  <a href="#" class="hover:text-[#D53669] hover:bg-[#f1f1f1]"
+                    >Link 3</a
+                  >
+                </div>
+              </div>
+            </div>
+          </mat-menu>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

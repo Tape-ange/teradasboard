@@ -1,0 +1,53 @@
+<div class="bg-[#FFFFFF] p-3 drop-shadow-xl rounded-lg !mb-3">
+  <div class="flex gap-3">
+    <div class="rounded-lg shrink-3">
+      <img src="{{ data.imgConsultant }}" alt="!" />
+    </div>
+    <div class="inline-block">
+      <div>
+        <h3 class="text-[#023DA5] !font-black !mb-0">
+          {{ data.consultantName }}
+        </h3>
+      </div>
+      <div>
+        <h4 class="!mb-0 py-1">{{ data.func }}</h4>
+      </div>
+      <div class="flex gap-4">
+        <div class="inline-block">
+          <span class="text-[#737373]">Entreprise</span>
+          <h5 class="!font-black">{{ data.companyName }}</h5>
+        </div>
+        <div class="inline-block">
+          <span class="text-[#737373]">Exp</span>
+          <h5 class="!font-black">{{ data.consultantExp }}</h5>
+        </div>
+        <div class="inline-block">
+          <span class="text-[#737373]">TJM</span>
+          <h5 class="!font-black">{{ data.tjm }}</h5>
+        </div>
+        <div class="inline-block">
+          <span class="text-[#737373]">Type</span>
+          <h5 class="!font-black">{{ data.type }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <div class="p-2 bg-[#EFF6FF] rounded-lg flex items-center gap-1">
+      <div><i class="text-[#023DA5] fa-solid fa-phone"></i></div>
+      <div>
+        <span>{{ data.telConsultant }}</span>
+      </div>
+    </div>
+    <div class="p-2 bg-[#EFF6FF] rounded-lg flex items-center gap-1">
+      <div class="text-[#023DA5]"
+        ><i class="fa-solid fa-envelope"></i>
+      </div>
+      <div>
+      <span>{{ data.consultantMail }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+

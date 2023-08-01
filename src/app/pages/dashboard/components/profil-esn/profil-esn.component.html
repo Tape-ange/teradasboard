@@ -1,0 +1,63 @@
+<div class="inline-block gap-2">
+  <div class="bg-[#FFFFFF] p-3">
+    <div class="justify-start py-2">
+      <h2 class="text-[#444444] !font-bold !mb-0">Quick access</h2>
+    </div>
+    <hr class="border border-[#F5FAFF] !mb-5" />
+    <div class="block">
+      <div class="py-2">
+        <a href="" class="text-[#023DA5] !text-lg underline"
+          >Tous mes consultants ( 1089 )</a
+        >
+      </div>
+      <div class="py-2">
+        <a href="" class="text-[#023DA5] !text-lg underline"
+          >Mes intercontrats ( 108 )</a
+        >
+      </div>
+      <div class="py-2">
+        <a href="" class="text-[#023DA5] !text-lg underline"
+          >Appel d’offres en cours ( 89 )</a
+        >
+      </div>
+      <div class="py-2">
+        <a href="" class="text-[#023DA5] !text-lg underline"
+          >Mes demandes de référencement ( 10 )</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#FFFFFF] p-3 inline-block">
+    <div class="flex justify-between items-center py-2">
+      <div>
+        <h2 class="text-[#444444] !font-bold !mb-0">Mes consultants en mission</h2>
+      </div>
+      <div>
+        <span class="text-[#D53669]">(203)</span>
+      </div>
+    </div>
+    <hr class="border border-[#F5FAFF] !mb-5" />
+    <div *ngFor="let element of elements">
+      <app-card-consultant [data]="element"></app-card-consultant>
+    </div>
+  </div>
+  <div class="text-center p-5">
+    <button class="bg-[#D53669] text-[#FFFFFF] p-3 rounded-md !font-bold">
+      Voir tous mes consultants
+    </button>
+  </div>
+  <div class="bg-[#FFFFFF] p-3 inline-block">
+    <div class="justify-start py-2">
+      <h2 class="text-[#444444] !font-bold !mb-0">Sociétés référencées</h2>
+    </div>
+    <hr class="border border-[#F5FAFF] !mb-5" />
+    <div *ngFor="let element of elements">
+      <app-card-consultant [data]="element"></app-card-consultant>
+    </div>
+  </div>
+  <!-- <div class="text-center p-5">
+    <button class="bg-[#D53669] text-[#FFFFFF] p-3 rounded-md !font-bold">
+      Voir les sociétés référencées
+    </button>
+  </div> -->
+</div>

@@ -1,0 +1,434 @@
+.wrap-section {
+    min-height: 884px;
+    width: 100%;
+    padding-top: 86px;
+}
+
+.second-bg {
+    background: #E5EDFE;
+}
+
+.main-title {
+    color: #0A3CB1;
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.wrap-logo {
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+}
+
+.wrap-logo .logo {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+}
+
+nav {
+    background-color: transparent !important;
+}
+
+.second-title {
+    color: #0A3CB1;
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.t-btn {
+    display: inline-flex;
+    border: 1px solid #a4a4a4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 44px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #3b3b3b;
+    margin: 10px 7px;
+}
+
+.t-btn:hover {
+    color: #282727;
+}
+
+.t-btn-primary {
+    background: #D53669 !important;
+    color: #FFFFFF;
+    font-weight: bolder;
+
+    border: none;
+}
+.t-btn-secondary {
+  background: #F3D6D8 !important;
+  color: #D53669;
+  font-weight: bolder;
+
+  border: none;
+}
+
+.a-btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 28px;
+    margin: 10px 12px;
+    color: #3b3b3b;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.a-btn-cnx-outline-blue {
+    border: solid 2px #0A3CB1 !important;
+    background-color: #fff !important;
+    color: #0A3CB1;
+    border-radius: 17px;
+
+
+}
+
+.a-btn-cnx {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 18px !important;
+    box-sizing: border-box !important;
+    gap: 10px;
+
+    width: auto;
+
+    background: #0A3CB1;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.btn-primary-plain {
+    border: none !important;
+    background-color: transparent !important;
+    color: #0A3CB1 !important;
+
+}
+
+.btn-primary {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 28px;
+    color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 24px;
+
+    background: #D53669;
+    /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+    leading-trim: both;
+    text-edge: cap;
+    text-align: center;
+}
+
+.btn-secondary {
+
+
+    color: #fff;
+    background: #0A3CB1;
+    border-radius: 8px;
+
+}
+
+.wrap-thumbs {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background-image: url(/assets/img/icon_wrap_msg.png), url(/assets/img/vector3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center -0px, center 45px;
+    background-size: 70px auto, 300px 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumb-row {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.thumb-item {
+    width: 265px;
+    height: 184px;
+    border-radius: 15px;
+    z-index: 22;
+    position: relative;
+    margin: 15px;
+}
+
+.thumb-item-has-circle {
+    z-index: 20;
+    position: relative;
+}
+
+.thumb-circle-bottom {
+    position: absolute;
+    z-index: 5;
+    bottom: -5px;
+    left: -7px;
+    width: 131.86px;
+    height: 131.86px;
+    background: #D53669;
+    border-radius: 50%;
+}
+
+.thumb-icon-bottom {
+    position: absolute;
+
+    bottom: 5px;
+    z-index: 50;
+    background-color: #E5D64B;
+    background-image: url(/assets/img/icon_wrap_editor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 73px;
+    height: 51px;
+
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, 0);
+}
+
+.thumb-item-has-circle {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: -5px;
+    right: -7px;
+    width: 131.86px;
+    height: 131.86px;
+    background-color: #052777;
+    border-radius: 50%;
+
+}
+
+.thumb-bg-blue {
+    background-color: #0A3CB1;
+}
+
+.thumb-bg-green {
+    background: #00B99E;
+
+}
+
+.thumb-bg-red {
+
+    background: #D53669;
+
+}
+
+.thumb-bg-yellow {
+
+    background: #E5D64B;
+
+}
+
+.thumb-bg-re1 {
+    background-color: #FDADAC;
+}
+
+.wrap-thumbs-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-thumb-lg {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+
+}
+
+.item-thumb-lager {
+    height: 100% !important;
+}
+
+.multi-bg-icons {
+    background-image: url(/assets/img/icons/aws.png), url(/assets/img/icons/docker.png), url(/assets/img/icons/azure.png), url(/assets/img/icons/firebase.png), url(/assets/img/icons/terraform.png), url(/assets/img/icons/graphql.png), url(/assets/img/icons/kubernetes.png);
+    background-position: 10% 27%, 23% 7%, 33% 23%, 44% 0%, 60% 0%, 73% 12%, 83% 24%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+app-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.t-title {
+    font-weight: bolder;
+
+    color: #3b3b3b;
+}
+
+.t-title-1 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #3b3b3b;
+}
+
+.t-title-2 {
+    font-size: 1.8em;
+}
+
+.t-color-primary {
+    color: #D53669 !important;
+}
+
+.t-color-secondary {
+    color: #0A3CB1;
+}
+
+/*
+  Animate Section 7 images
+
+  */
+.wrap-stepper {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.t-btn-choose-type {
+    min-height: 306px;
+    flex: 1 1 0px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.t-btn-choose-type:hover {
+    background-color: #fbebf0;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #d53669 !important;
+
+    h3 {
+        color: #d53669 !important;
+    }
+
+    .t-parag {
+        display: none;
+    }
+
+    transition: 0.2s;
+}
+.t-parag{
+  font-size: 20px
+}
+.t-input{
+  border: 1.5px solid #0A3CB1;
+}
+.t-input:focus {
+  outline-color: #d53669;
+}
+.PresentActors{
+  padding: 80px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.sidebar {
+    width: 480px;
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 220px;
+        /* 180 + 40 */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .t-actor {
+    display: none;
+  }
+  .t-parag, .t-title-1 {
+    text-align: center;
+  }
+  .t-choose-actors{
+    display: flex;
+    flex-direction: column;;
+  }
+  .wrap-stepper {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+  .t-btn-choose-type{
+    // padding: 25px;
+    flex: none
+  }
+  .t-ESN, .t-consultant, .t-client{
+    padding: 20px;
+  }
+  .PresentActors{
+    padding: 1px;
+  }
+}
+
